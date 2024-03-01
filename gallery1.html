@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+        body {
+          background-image: url("https://images.creativemarket.com/0.1.0/ps/7065029/1820/965/m1/fpnw/wm1/fskqsdmhcmtrnadgcmunaflw1nh5tavkkv3n4kztdzp8kbz3mdyso1yajjfq2c1o-.jpg?1569963940&s=bc72ef9863a09c077c9806ae416074af"); 
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center center;
+          /* background-color: darkgray; Fallback background color */
+          animation: fadeIn 5s;
+        }
+
+        #div1{
+          position: relative;
+          height: 100%;
+          width: 350px;
+          top: 120px;
+          left: 40px;
+        }
+
+        #div2{
+          position:absolute;
+          height: 100%;
+          width: 350px;
+          top:140px;
+          left: 380px;
+        }
+
+        #div3{
+          position:absolute;
+          height: 100%;
+          width: 350px;
+          top:140px;
+          left: 730px;
+        }
+
+        .image {
+          border: 2px solid rgb(255, 255, 255);
+          border-radius: 10px;
+          justify-content: center;
+        }
+        
+        .image:hover{
+          transition-duration: 1s;
+          height: 210px;
+          width: 210px;
+          transform:translate3d(0,-15px,0);
+          box-shadow: 10px 10px 10px greenyellow;
+
+        }
+
+        footer{
+          position: relative;
+          top: 160px;
+        }
+
+        pre{
+          font-size: 1.18rem;
+        }
+        .footer {
+        background-color: #302f49;
+        }
+  
+        .footer .copy {
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        }
+
+        .bottom-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        }
+
+        .bottom-links .links p {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        }
+
+        .bottom-links .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        }
+
+        .bottom-links .links span {
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 10px 0;
+        }
+
+        .bottom-links .links a {
+        text-decoration: none;
+        color: #a1a1a1;
+        padding: 10px}
+        #scrolling-img {
+          text-align: center;
+        }
+
+        .logostyle{
+        text-align: center;
+        border: 2px solid yellow;
+        border-radius: 15px;
+        }
+        @media(max-width:768px){
+        #div1{
+          width: 90%;
+          position: relative; 
+          top: 120px ;
+          left: 50px;
+        }
+
+        #div2{
+          width: 90%;
+          position: relative; 
+          top: 140px ;
+          left: 50px;
+        }
+
+        #div3{
+          width: 90%;
+          position: relative; 
+          top: 160px ;
+          left: 50px;
+        }
+
+        .bottom-links {
+        flex-direction: column;
+        color: #1c1c1c;
+        padding: 20px 0;
+      }
+
+      .bottom-links .links {
+        color: #1c1c1c;
+        padding: 20px 0;
+      }
+      
+      .bottom-links .links span {
+        font-size: 16px;
+        margin: 5px 0;
+        color: #fff;
+      }
+      }
+    /* @media (max-width: 768px) {
+      #div1 {
+        flex-direction: column; 
+      }
+
+      #div1 {
+        max-width: 100%; 
+      }
+
+      #div2 {
+        flex-direction: column; 
+      }
+
+      #div2 {
+        max-width: 100%; 
+      }
+
+      #div3 {
+        flex-direction: column; 
+      }
+
+      #div3 {
+        max-width: 100%; 
+      }
+
+    } */
+
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        .autoanimationText{
+        color: #f35a08;
+        }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="logo.jpg" height="75px" width="70px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about1.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact1.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery1.html">Gallery</a>
+            </li>    
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+    
+<main>
+
+    <div id="div1">
+      <div>
+        <img src="https://i.ytimg.com/vi/Z9Y60u8tI9M/maxresdefault.jpg" class="image" height="200px" width="200px" alt="Vada Pav">
+        <pre style="color:white ; font-weight: bold;"> Calories: 310 cal 
+ Total Fat: 15-20 grams 
+ Protein: 6-8 grams 
+ Rating : &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;&#189; </pre>
+      
+      </div>
+
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG" class="image" height="200px" width="200px" alt="French Fries">
+        <pre style="color:white ; font-weight: bold; "> Calories: 195 cal 
+ Total Fat: 13-15 grams 
+ Protein: 1.9 grams 
+ Rating : &#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</pre>
+      </div>
+
+      <div>
+        <img src="https://www.swarnabdutta.com/wp-content/uploads/2022/07/Dabeli-Street-Food.jpeg" class="image" height="200px" width="200px" alt="Dabeli">
+        <pre style="color:white ; font-weight: bold; "> Calories: 205 cal 
+ Total Fat: 8.3 grams 
+ Protein: 4.2 grams 
+ Rating : &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;&#189;</pre>
+      </div>
+    </div>
+
+    <div id="div2">
+      <div>
+      <img src="https://i.pinimg.com/originals/43/73/4b/43734bc7edd29db24a720f63611a3cf1.jpg" class="image" height="200px" width="200px" alt="Bhel">
+      <pre style="color:white ; font-weight: bold;"> Calories: 188 cal 
+ Total Fat: 9.2 grams 
+ Protein: 5.9 grams 
+ Rating : &#x2605; &#x2605; &#x2605; &#x2605; &#x2606; &#x2606; </pre>
+    </div>
+
+    <div>
+      <img src="https://www.pennlive.com/resizer/quq9lPvrEE0BwcfiHUmy16QENoQ=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/Z67VWLQ3E5CJLOML7EPL5XLNFM.jpg" class="image" height="200px" width="200px" alt="Bueger">
+      <pre style="color:white ; font-weight: bold; "> Calories: 272 cal 
+ Total Fat: 9.77 grams 
+ Protein: 12.32 grams 
+ Rating : &#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</pre>
+    </div>
+
+    <div>
+      <img src="https://media4.popsugar-assets.com/files/thumbor/LDUPOHNhwyy3s7XYJFgUaz3v6Zg/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2015/08/13/774/n/1922398/82df0773_b196f4b6d3d09caa_veggie-sandwich-2.xxxlarge_2x.jpg" class="image" height="200px" width="200px" alt="Sandwich">
+      <pre style="color:white ; font-weight: bold; "> Calories: 252 cal 
+ Total Fat: 12.08 grams 
+ Protein: 8.09 grams 
+ Rating : &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;&#189;</pre>
+    </div>
+  </div>
+
+  <div id="div3">
+    <div>
+    <img src="https://www.quirchfoods.com/wp-content/uploads/2019/03/IMAGEN-GRANDE-FOR-FROZEN-FOODS-SECTION_AdobeStock_58249902.jpg" class="image" height="200px" width="200px" alt="Pizza">
+    <pre style="color:white ; font-weight: bold;"> Calories: 237 cal 
+ Total Fat: 10.1 grams 
+ Protein: 10.6 grams 
+ Rating : &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;&#189; </pre>
+  </div>
+
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG" class="image" height="200px" width="200px" alt="French Fries">
+    <pre style="color:white ; font-weight: bold; "> Calories: 195-200 cal 
+ Total Fat: 13-15 grams 
+ Protein: 1.9 grams 
+ Rating : &#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</pre>
+  </div>
+
+  <div>
+    <img src="https://www.swarnabdutta.com/wp-content/uploads/2022/07/Dabeli-Street-Food.jpeg" class="image" height="200px" width="200px" alt="Dabeli">
+    <pre style="color:white ; font-weight: bold; "> Calories: 200-220 cal 
+ Total Fat: 8.3 grams 
+ Protein: 4.2 grams 
+ Rating : &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;&#189;</pre>
+  </div>
+</div>
+
+
+</main>
+<footer>
+  <div class="bottom-links bg-dark" >
+    <div class="links bg-dark">
+      <p class="copy">&copy;The Food Lab</p>
+      <span>Social Links</span>
+      <div>
+      <a href="https://www.instagram.com/food_lab007/"><img src="instagram.webp" height="45px" width="45px"></a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
